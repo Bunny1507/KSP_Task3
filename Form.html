@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<style>
+    body {
+
+       
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2%;
+        
+    }
+
+    form{
+        
+        border-radius: 12px;
+        background:lightgray;
+        padding: 2vw 2vw;
+        max-width: 600px;
+    
+       }
+
+    form h1{
+        color: white;
+        font-family: monospace;
+        background-color: black;
+        text-align: center;
+        
+    }
+
+    form input,textarea{
+        border:0;
+        border-radius: 3px;
+        margin: 8px 0;
+    }
+
+    form button{
+        background: lightcyan;
+        border-radius: 8px;
+        cursor: pointer;
+        
+    }
+
+    form label{
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    
+
+</style>
+
+
+<body>
+
+    
+    
+    <form action="">
+        
+        <h1>Form Filling</h1>
+
+
+        <label for="fname"><b>FirstName :</b></label>
+        <input type="text"  placeholder="First Name" required> <br><br>
+    
+        <label for="lname"><b>LastName :</b></label> 
+        <input type="text" placeholder="Last Name" required> <br><br>
+
+        <label for="dob"><b>Date of Birth :</b></label> 
+        <input type="date" required> <br><br>
+
+        <label for="Gender"><b>Gender :</b></label> 
+        <input type="radio" value="Male" required>M
+        <input type="radio" value="Female" required>F
+        <input type="radio" value="Others" required>Others <br><br>   
+
+        <label for="mailid"><b>Email ID :</b></label> 
+        <input type="mail" placeholder="_____________@xyz.com" required> <br><br>
+
+        <label for="Contactno"><b>Contact Number :</b></label> 
+        <input type="number" placeholder="+91" required> <br><br>
+        
+
+        <label for="file"><b>Upload  file/files</b></label>
+        <input type="file" multiple > <br><br>
+
+        <label for="fmsg"><b>FeedBack Message :</b></label>
+        <textarea name="Message" id="Message" cols="30" rows="4" placeholder="How can we improve"></textarea> <br><br>
+
+        <button type="submit"><b>Submit</b></button>
+
+
+    </form>
+
+    
+</body>
+</html>
